@@ -87,9 +87,10 @@ memo = defaultdict(int)
 
 def fibonacci(n):
     if n <= 1:
-        return n
+        return n                # The start is same as before, as there is not memorization needed
 
     if n not in memo:
+        # In the earlier format, every time we ran the program the function would recalculate all former fib() and store them only for the moment. Now, they are "memorized"
         memo[n] = fibonacci(n - 1) + fibonacci(n - 2)
 
     return memo[n]
