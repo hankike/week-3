@@ -1,6 +1,7 @@
 from collections import defaultdict
 import seaborn as sns
 import pandas as pd
+import numpy as np
 
 # Exercise One: Fibonacci Series
 
